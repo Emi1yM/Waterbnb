@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import WaterbnbPage from './WaterbnbPage.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div 
+    // style={{  
+    //   backgroundImage: "url(" + "http://www.weizmann.ac.il/WeizmannCompass/sites/WeizmannCompass/files/styles/main_image/public/compass_water_952x460px.jpg?itok=yyYkx34J" + ")",
+    //   position: "fixed", 
+    //   top: "0", 
+    //   left: "0", 
+    //   minWidth: "100%",
+    //   minHeight: "100%",
+    // }}
+    >
+      <WaterbnbPage />
     </div>
-  );
+  )
 }
 
 export default App;

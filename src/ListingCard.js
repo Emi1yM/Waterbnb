@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {   Card, CardImg, CardBody,
     CardTitle, CardSubtitle, Button } from "reactstrap";
 
-export class ListingCard extends React.Component {
+export class ListingCard extends Component {
     constructor() {
         super()
         this.state = {
@@ -16,12 +16,13 @@ export class ListingCard extends React.Component {
     }
 
     render(props) {
+        console.log(props)
     return (
         <Card>
-          <CardImg top width="160px" top height="249px" src={props.bed.imgUrl}/>
+          <CardImg top width="160px" top height="249px" src={this.props.bed.imgUrl}/>
           <CardBody>
-            <CardTitle>{props.bed.title}</CardTitle>
-            <CardSubtitle>{props.bed.subtitle}</CardSubtitle>
+            <CardTitle>{this.props.bed.title}</CardTitle>
+            <CardSubtitle>{this.props.bed.subtitle}</CardSubtitle>
             <Button onClick={this.handleClick}>Love</Button>
           </CardBody>
         </Card>

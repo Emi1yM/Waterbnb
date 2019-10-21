@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ListingCard from './ListingCard'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CardGroup } from "reactstrap";
 
-export class Listings extends React.Component {
+export class Listings extends Component {
     constructor(){
         super()
         this.state = {

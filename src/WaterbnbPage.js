@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {   Jumbotron } from "reactstrap";
 import Listings from './Listings'
 import Loved from './Loved'
 //import listingsData from './listingsData'
 
-export class WaterbnbPage extends React.Component {
+export class WaterbnbPage extends Component {
     constructor(){
         super()
         this.state={
